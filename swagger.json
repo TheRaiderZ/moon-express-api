@@ -1,0 +1,726 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+      "title": "defaultTitle",
+      "description": "defaultDescription",
+      "version": "0.1"
+    },
+    "servers": [
+      {
+        "url": "http://localhost:3000"
+      }
+    ],
+    "paths": {
+      "/rocket/": {
+        "post": {
+          "description": "Auto generated using Swagger Inspector",
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/rocket_body"
+                },
+                "examples": {
+                  "0": {
+                    "value": "{\n        \"date\": \"2021-11-16T00:00:00.000Z\",\n        \"nbPlace\": 4,\n        \"nbPlaceRemaining\": 4,\n        \"price\": 543,\n        \"image\": \"5.jpg\",\n        \"name\": \"Rocket QC\",\n        \"spatioportDepartureId\": \"61873bdcad6ebbde689ca504\",\n        \"spatioportArrivalId\": \"61873beaad6ebbde689ca506\"\n}"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Auto generated using Swagger Inspector",
+              "content": {
+                "application/json; charset=utf-8": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "examples": {}
+                }
+              }
+            }
+          },
+          "security": [
+            {
+              "Bearer": []
+            }
+          ],
+          "servers": [
+            {
+              "url": "http://localhost:3000"
+            }
+          ]
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "/spatioport/": {
+        "get": {
+          "description": "Auto generated using Swagger Inspector",
+          "responses": {
+            "200": {
+              "description": "Auto generated using Swagger Inspector",
+              "content": {
+                "application/json; charset=utf-8": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "examples": {}
+                }
+              }
+            }
+          },
+          "servers": [
+            {
+              "url": "http://localhost:3000"
+            }
+          ]
+        },
+        "post": {
+          "description": "Auto generated using Swagger Inspector",
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/spatioport_body"
+                },
+                "examples": {
+                  "0": {
+                    "value": "{\n    \"city\":\"Quebec\",\n    \"position\":\"Earth\"\n}"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Auto generated using Swagger Inspector",
+              "content": {
+                "application/json; charset=utf-8": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "examples": {}
+                }
+              }
+            }
+          },
+          "servers": [
+            {
+              "url": "http://localhost:3000"
+            }
+          ]
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "/rocket/{rocketId}": {
+        "get": {
+          "description": "Auto generated using Swagger Inspector",
+          "parameters": [
+            {
+              "name": "rocketId",
+              "in": "path",
+              "description": "Rocket ID",
+              "required": true,
+              "style": "simple",
+              "explode": false,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Auto generated using Swagger Inspector",
+              "content": {
+                "application/json; charset=utf-8": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "examples": {}
+                }
+              }
+            }
+          },
+          "servers": [
+            {
+              "url": "http://localhost:3000"
+            }
+          ]
+        },
+        "delete": {
+          "description": "Auto generated using Swagger Inspector",
+          "parameters": [
+            {
+              "name": "rocketId",
+              "in": "path",
+              "description": "Rocket ID",
+              "required": true,
+              "style": "simple",
+              "explode": false,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Auto generated using Swagger Inspector",
+              "content": {
+                "application/json; charset=utf-8": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "examples": {}
+                }
+              }
+            }
+          },
+          "security": [
+            {
+              "Bearer": []
+            }
+          ],
+          "servers": [
+            {
+              "url": "http://localhost:3000"
+            }
+          ]
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "/reservation/{reservationId}": {
+        "get": {
+          "description": "Auto generated using Swagger Inspector",
+          "parameters": [
+            {
+              "name": "reservationId",
+              "in": "path",
+              "description": "Reservation ID",
+              "required": true,
+              "style": "simple",
+              "explode": false,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Auto generated using Swagger Inspector",
+              "content": {
+                "application/json; charset=utf-8": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "examples": {}
+                }
+              }
+            }
+          },
+          "servers": [
+            {
+              "url": "http://localhost:3000"
+            }
+          ]
+        },
+        "delete": {
+          "description": "Auto generated using Swagger Inspector",
+          "parameters": [
+            {
+              "name": "reservationId",
+              "in": "path",
+              "description": "Reservation ID",
+              "required": true,
+              "style": "simple",
+              "explode": false,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Auto generated using Swagger Inspector",
+              "content": {
+                "application/json; charset=utf-8": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "examples": {}
+                }
+              }
+            }
+          },
+          "security": [
+            {
+              "Bearer": []
+            }
+          ],
+          "servers": [
+            {
+              "url": "http://localhost:3000"
+            }
+          ]
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "/search/{date}/{nbPlaces}/{spatioportDepartId}/{spatioportDestinationId}": {
+        "get": {
+          "description": "Auto generated using Swagger Inspector",
+          "parameters": [
+            {
+              "name": "date",
+              "in": "path",
+              "description": "Date",
+              "required": true,
+              "style": "simple",
+              "explode": false,
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "nbPlaces",
+              "in": "path",
+              "description": "Nombre de places",
+              "required": true,
+              "style": "simple",
+              "explode": false,
+              "schema": {
+                "type": "number"
+              }
+            },
+            {
+              "name": "spatioportDepartId",
+              "in": "path",
+              "description": "Spatioport de départ ID",
+              "required": true,
+              "style": "simple",
+              "explode": false,
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "spatioportDestinationId",
+              "in": "path",
+              "description": "Spatioport de destination ID",
+              "required": true,
+              "style": "simple",
+              "explode": false,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Auto generated using Swagger Inspector",
+              "content": {
+                "application/json; charset=utf-8": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "examples": {}
+                }
+              }
+            }
+          },
+          "servers": [
+            {
+              "url": "http://localhost:3000"
+            }
+          ]
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "/spatioport/{spatioportId}": {
+        "get": {
+          "description": "Auto generated using Swagger Inspector",
+          "parameters": [
+            {
+              "name": "spatioportId",
+              "in": "path",
+              "description": "Spatioport ID",
+              "required": true,
+              "style": "simple",
+              "explode": false,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Auto generated using Swagger Inspector",
+              "content": {
+                "application/json; charset=utf-8": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "examples": {}
+                }
+              }
+            }
+          },
+          "servers": [
+            {
+              "url": "http://localhost:3000"
+            }
+          ]
+        },
+        "delete": {
+          "description": "Auto generated using Swagger Inspector",
+          "parameters": [
+            {
+              "name": "spatioportId",
+              "in": "path",
+              "description": "Spatioport ID",
+              "required": true,
+              "style": "simple",
+              "explode": false,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Auto generated using Swagger Inspector",
+              "content": {
+                "application/json; charset=utf-8": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "examples": {}
+                }
+              }
+            }
+          },
+          "security": [
+            {
+              "Bearer": []
+            }
+          ],
+          "servers": [
+            {
+              "url": "http://localhost:3000"
+            }
+          ]
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "/auth/login": {
+        "post": {
+          "description": "Auto generated using Swagger Inspector",
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/auth_login_body"
+                },
+                "examples": {
+                  "0": {
+                    "value": "{\n    \"email\":\"123@email.com\",\n    \"password\":\"123\"\n}"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Auto generated using Swagger Inspector",
+              "content": {
+                "application/json; charset=utf-8": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "examples": {}
+                }
+              }
+            }
+          },
+          "servers": [
+            {
+              "url": "http://localhost:3000"
+            }
+          ]
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "/reservation/": {
+        "get": {
+          "description": "Auto generated using Swagger Inspector",
+          "responses": {
+            "200": {
+              "description": "Auto generated using Swagger Inspector",
+              "content": {
+                "application/json; charset=utf-8": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "examples": {}
+                }
+              }
+            }
+          },
+          "servers": [
+            {
+              "url": "http://localhost:3000"
+            }
+          ]
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "/reservation/{rocketId}/{nbPlaces}/{price}": {
+        "post": {
+            "security": [
+            {
+                "Bearer": []
+            }
+            ],
+          "description": "Auto generated using Swagger Inspector",
+          "parameters": [
+            {
+              "name": "rocketId",
+              "in": "path",
+              "description": "Rocket ID",
+              "required": true,
+              "style": "simple",
+              "explode": false,
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "nbPlaces",
+              "in": "path",
+              "description": "Nombre de place",
+              "required": true,
+              "style": "simple",
+              "explode": false,
+              "schema": {
+                "type": "integer"
+              }
+            },
+            {
+              "name": "price",
+              "in": "path",
+              "description": "Prix",
+              "required": true,
+              "style": "simple",
+              "explode": false,
+              "schema": {
+                "type": "number"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Auto generated using Swagger Inspector",
+              "content": {
+                "application/json; charset=utf-8": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "examples": {}
+                }
+              }
+            }
+          },
+          "servers": [
+            {
+              "url": "http://localhost:3000"
+            }
+          ]
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "/rocket": {
+        "get": {
+          "description": "Auto generated using Swagger Inspector",
+          "responses": {
+            "200": {
+              "description": "Auto generated using Swagger Inspector",
+              "content": {
+                "application/json; charset=utf-8": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "examples": {}
+                }
+              }
+            }
+          },
+          "servers": [
+            {
+              "url": "http://localhost:3000"
+            }
+          ]
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      },
+      "/auth/signup": {
+        "post": {
+          "description": "Auto generated using Swagger Inspector",
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/auth_signup_body"
+                },
+                "examples": {
+                  "0": {
+                    "value": "{\n    \"email\":\"456@email.com\",\n    \"name\":\"456\",\n    \"password\":\"456\",\n    \"level\":1\n}"
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Auto generated using Swagger Inspector",
+              "content": {
+                "application/json; charset=utf-8": {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "examples": {}
+                }
+              }
+            }
+          },
+          "servers": [
+            {
+              "url": "http://localhost:3000"
+            }
+          ]
+        },
+        "servers": [
+          {
+            "url": "http://localhost:3000"
+          }
+        ]
+      }
+    },
+    "components": {
+      "schemas": {
+        "rocket_body": {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "nbPlace": {
+              "type": "integer"
+            },
+            "image": {
+              "type": "string"
+            },
+            "spatioportArrivalId": {
+              "type": "string"
+            },
+            "nbPlaceRemaining": {
+              "type": "integer"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "spatioportDepartureId": {
+              "type": "string"
+            }
+          }
+        },
+        "auth_login_body": {
+          "type": "object",
+          "properties": {
+            "password": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          }
+        },
+        "auth_signup_body": {
+          "type": "object",
+          "properties": {
+            "password": {
+              "type": "string"
+            },
+            "level": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          }
+        },
+        "spatioport_body": {
+          "type": "object",
+          "properties": {
+            "city": {
+              "type": "string"
+            },
+            "position": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "securitySchemes": {
+        "Bearer": {
+          "type": "http",
+          "scheme": "bearer",
+          "bearerFormat": "JWT"
+        }
+      }
+    }
+  }
