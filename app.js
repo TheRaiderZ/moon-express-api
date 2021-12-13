@@ -6,6 +6,9 @@ var hateoasLinker = require('express-hateoas-links');
 const app = express();
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
+const dotenv = require('dotenv');
+
+dotenv.config();
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Déclaration d'un parser pour analyser "le corps (body)" d'une 'requête entrante avec POST  
@@ -58,7 +61,7 @@ app.use(function (err, req, res, next) {
 });
 
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 mongoose
   .connect('mongodb://127.0.0.1:27017/moonExpress')
   .then(() => {
